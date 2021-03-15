@@ -1,0 +1,16 @@
+.msgs{
+  
+  display: flex;
+  justify-content: flex-end;
+ 
+}
+.msgs .msgbox{
+  padding: 10px;
+  
+}
+
+.msgs .msgbox span{ 
+  font-size: 10px;
+  color: rgb(77, 33, 33);
+  
+}
