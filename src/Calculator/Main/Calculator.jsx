@@ -3,7 +3,7 @@ import "./Calculator.css"
 import Button from "../components/Button"
 import Display from "../components/Display"
 
-export default () => {
+const Calculator = () => {
     function fixResul(op) {
         if (op === "=") {
             let resul
@@ -137,3 +137,5 @@ export default () => {
     )
 
 }
+
+export default Calculator
