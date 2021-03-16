@@ -1,10 +1,12 @@
 import React from 'react';
 import "./Display.css"
 
-export default (props)=>{
+const display = (props)=>{
     return(
         <div className="display">{props.valorTotal}</div>
     )
     
 
 }
+ 
+ export default display
