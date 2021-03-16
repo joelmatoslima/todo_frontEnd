@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Button.css"
 
-export default (props) => {   
+ const button = (props) => {   
     
   
     return (
@@ -35,22 +35,4 @@ export default (props) => {
 
 
 
-
-
-/*if (valorDisplay[0] == 0) {
-      
-                let newValor = v
-    
-                setV1(newValor)
-                setvalorDisplay([newValor, 100])
-    
-    
-                console.log("setZERO")
-    
-            } else {
-                let newValor = [...v1, v]
-                setV1(newValor)
-                setvalorDisplay([newValor, 100])
-    
-    
-            }*/
+export default button
