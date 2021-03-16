@@ -6,10 +6,10 @@ import TodoList from "./TodoList";
 const axios = require("axios");
 
 //const URL = "http://localhost:3003/api/todos";
-const urlPost = "http://localhost:8080/todo";
-const urGet = "http://localhost:8080/todos";
-const urlDelete = "http://localhost:8080/todo/";
-const urlEdit = "http://localhost:8080/todo/";
+const urlPost = "https://minhaapisama.herokuapp.com/todo";
+const urGet = "https://minhaapisama.herokuapp.com/todos";
+const urlDelete = "https://minhaapisama.herokuapp.com/todo/";
+const urlEdit = "https://minhaapisama.herokuapp.com/todo/";
 
 
 
