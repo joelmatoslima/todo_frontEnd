@@ -5,7 +5,7 @@ const display = (props)=>{
     return(
         <div className="display">{props.valorTotal}</div>
     )
-    
+       
 
 }
  
