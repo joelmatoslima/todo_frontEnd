@@ -5,12 +5,12 @@ import TodoForm from "../template/TodoForm";
 import TodoList from "./TodoList";
 const axios = require("axios");
 
-//const URL = "http://localhost:3003/api/todos";
+
 const urlPost = "https://minhaapisama.herokuapp.com/todo";
 const urGet = "https://minhaapisama.herokuapp.com/todos";
 const urlDelete = "https://minhaapisama.herokuapp.com/todo/";
 const urlEdit = "https://minhaapisama.herokuapp.com/todo/";
-
+ 
 
 
 export default function Home(props) {
@@ -38,7 +38,7 @@ export default function Home(props) {
   function hadleAdd(t) {
     console.log(t);
     
-
+ 
     axios
       .post(urlPost, { id: Date.now(), nome: t, done: false })
       .then((res) => {
