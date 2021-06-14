@@ -5,7 +5,8 @@ const frases = ["Você teve meu coração na palma de sua mão, Mas você brinco
                 "Eu não quero me apartar do seu lado, o meu coraçao em prantos diz: 'Goodbye' ",
                 "Segure minha mão e vamos acabar com tudo isso",
                 "Eu me remexo muito, ele remexe muito!",
-                "Do amor nasce sacrificios, o ódio nasce, e passamos conhecer a dor"
+                "Do amor nasce sacrificios, o ódio nasce, e passamos conhecer a dor",
+                "Você nunca deveria ter confiado em Hollywood"
             
 ]
 

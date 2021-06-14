@@ -1,16 +1,13 @@
-.msgs{
-  
+.msgs{  
   display: flex;
-  justify-content: flex-end;
- 
+  justify-content: flex-end; 
 }
 .msgs .msgbox{
-  padding: 10px;
-  
+  padding: 10px;  
 }
 
 .msgs .msgbox span{ 
-  font-size: 10px;
+  font-size: 18px;
   color: rgb(77, 33, 33);
   
 }

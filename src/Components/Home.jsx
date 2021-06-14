@@ -21,7 +21,6 @@ export default function Home(props) {
       .get(urGet)
       .then((res) => {
         setLists(res.data.reverse());
-        //console.log(res.data[1].done)
         console.log("banco de dados carregado");
       })
       .catch((e) => {
@@ -86,13 +85,7 @@ export default function Home(props) {
     <div>
       <PageHeader nome="Tarefa" small="Cadastro" />
       <TodoForm myClick={hadleAdd} />
-      <TodoList lists={lists} remove={remove} edit={edit} remake={remake} />
-
-     
-      
-      
-
-      
+      <TodoList lists={lists} remove={remove} edit={edit} remake={remake} />           
     </div>
   );
 }
