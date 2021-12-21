@@ -12,7 +12,7 @@ const TodoForm = (props) => {
   }
 
   function validation() {
-    if (text === "" || text.length < 3) {
+    if (text.trim() === "" || text.trim().length < 3) {
       alert("Preencha o campo corretamente");
      
     } else {

@@ -3,20 +3,19 @@ import React from "react";
 import Button from "./Button";
 import "./TodoList.css";
 const TodoList = (props) => {
-  const lis = props.lists || [];
- 
+  const lis = props.lists ;
 
   const compo = lis.map((i, index) => {
     return (
       <tr key={index} className="capitalize">
         <td className={i.done ? "checked" : ""}>{i.nome}</td>
 
-        <td>
-          {i.done === false  ? (
+        <td style={{maxWidth: 90}}>
+          {i.done === false ? (
             <Button
-              label="Feito" 
+              label="Feito"
               styleBootstrap="btn-success"
-              
+
               click={props.edit}
               item={i}
             />
@@ -25,7 +24,7 @@ const TodoList = (props) => {
               <Button
                 label="Refazer"
                 styleBootstrap="btn-warning"
-                
+
                 click={props.remake}
                 item={i}
               />
@@ -33,7 +32,7 @@ const TodoList = (props) => {
               <Button
                 label="Deletar"
                 styleBootstrap="btn-danger"
-                
+
                 click={props.remove}
                 item={i}
               />
@@ -55,42 +54,27 @@ const TodoList = (props) => {
           </tr>
         </thead>
         <tbody>{compo}</tbody>
+        
+
       </table>
+
+
+      {
+          lis.length === 0 &&
+
+          <div className="d-flex justify-content-center p-4">
+
+
+          <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+
+          </div>
+
+        }
     </div>
   );
 };
 
 export default TodoList;
 
-/*
-
-<button
-            type="button"
-            className="btn btn-success"
-            onClick={() => done(i)}
-          >
-            Ok
-          </button>
-
-          <button
-            type="button"
-            className="btn btn-warning m-1"
-            
-            
-            onClick={() => props.remove(i.id)}
-          >
-            Refazer
-          </button>
-
-          <button
-            type="button"
-            className="btn btn-danger"
-            onClick={() => props.remove(i.id)}
-          >
-            Deletar
-          </button>
-
-
-
-
-          */

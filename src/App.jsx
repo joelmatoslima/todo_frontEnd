@@ -1,7 +1,7 @@
 import Menu from "./template/Menu";
 import Msgs from "./template/Msgs";
-import Home from "./Components/Home";
-import Sobre from "./Components/Sobre";
+import Home from "./components/Home";
+import Sobre from "./components/Sobre";
 
 function App() {
   return (
